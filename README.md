@@ -8,6 +8,7 @@
 ## Live Site
 
  **[View Portfolio]([(https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)](https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)**
+<img width="1280" height="722" alt="image" src="https://github.com/user-attachments/assets/594d5d4b-f8d5-422e-b22d-387a56e2d3b2" />
 
 ---
 
