@@ -7,8 +7,7 @@
 
 ## 🌐 Live Site
 
-👉 **[View Portfolio](https://yourusername.github.io/hellen-muthoni-portfolio)**
-*(Replace `yourusername` with your actual GitHub username after deploying)*
+👉 **[View Portfolio]([https://yourusername.github.io/hellen-muthoni-portfolio](https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/))**
 
 ---
 
