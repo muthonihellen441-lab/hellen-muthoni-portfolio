@@ -5,13 +5,13 @@
 
 ---
 
-## 🌐 Live Site
+## Live Site
 
-👉 **[View Portfolio]([(https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)](https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)**
+ **[View Portfolio]([(https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)](https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)**
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This is a personal portfolio website for **Hellen Muthoni Wanjiru** — a Fashion Designer and Creative Director based in Nairobi, Kenya. The site was built as part of the Moringa School AI Capstone project, using **TailwindCSS** as the chosen technology and **Claude AI** as the primary learning and development tool.
 
@@ -22,7 +22,7 @@ The goal was to:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 hellen-muthoni-portfolio/
@@ -35,7 +35,7 @@ hellen-muthoni-portfolio/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -47,7 +47,7 @@ hellen-muthoni-portfolio/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 No installations required. Just:
 
@@ -67,7 +67,7 @@ cd hellen-muthoni-portfolio
 
 That's it! The site uses the Tailwind CDN so no build step or npm is needed.
 
-> ⚠️ Make sure `Msoo.jpg` and `index.html` are in the **same folder** for the profile photo to display correctly.
+>  Make sure `Msoo.jpg` and `index.html` are in the **same folder** for the profile photo to display correctly.
 
 ---
 
@@ -86,7 +86,7 @@ That's it! The site uses the Tailwind CDN so no build step or npm is needed.
 
 ---
 
-## 🧠 AI Prompt Usage
+##  AI Prompt Usage
 
 This project was built entirely with the assistance of **Claude AI (claude.ai)**. Key prompts included:
 
@@ -99,7 +99,7 @@ Full prompt documentation with responses and reflections is available in [`toolk
 
 ---
 
-## 🐛 Common Issues
+##  Common Issues
 
 | Issue | Fix |
 |---|---|
@@ -111,17 +111,17 @@ Full prompt documentation with responses and reflections is available in [`toolk
 
 ---
 
-## 📬 Contact
+##  Contact
 
 **Hellen Muthoni Wanjiru**
-- 📧 muthonihellen441@gmail.com
-- 📞 +254 705 762 929
-- 📍 Nairobi, Kenya
-- 📸 [@hellenmuthoni](https://instagram.com/hellenmuthoni)
+-  muthonihellen441@gmail.com
+- +254 705 762 92
+- Nairobi, Kenya
+- [@hellenmuthoni](https://instagram.com/hellenmuthoni)
 
 ---
 
-## 📝 License
+##  License
 
 This project is open for viewing and learning purposes.
 Please do not reproduce or reuse personal content (name, photo, CV details) without permission.
