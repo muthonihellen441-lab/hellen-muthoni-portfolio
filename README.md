@@ -7,7 +7,7 @@
 
 ## 🌐 Live Site
 
-👉 **[View Portfolio]([https://yourusername.github.io/hellen-muthoni-portfolio](https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/))**
+👉 **[View Portfolio]([(https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)](https://muthonihellen441-lab.github.io/hellen-muthoni-portfolio/)**
 
 ---
 
