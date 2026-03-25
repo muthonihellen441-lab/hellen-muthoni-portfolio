@@ -2,6 +2,7 @@
 
 **Moringa School AI Capstone Project**
 **Student:** Hellen Muthoni Wanjiru
+**Email:** muthonihellen441@gmail.com
 **Date:** March 2025
 **Cohort:** Moringa School — Software Development
 
@@ -13,7 +14,7 @@
 **TailwindCSS** — a utility-first CSS framework for building modern, responsive web interfaces directly in HTML.
 
 ### Why did I choose it?
-As a Fashion Designer and Creative Director, having a personal portfolio website is essential. I wanted to learn a modern frontend technology that would let me build something visually elegant without writing complex custom CSS from scratch. TailwindCSS felt like the perfect bridge — it gives you full creative control through simple utility classes, which mirrors how I think about design: building up a look piece by piece.
+As a Fashion Designer and Creative Director, having a personal portfolio website is essential. I wanted to learn a modern frontend technology that would let me build something visually elegant without writing complex custom CSS from scratch. TailwindCSS felt like the perfect bridge — it gives full creative control through simple utility classes, which mirrors how I think about design: building up a look piece by piece.
 
 ### What is the end goal?
 Build and deploy a **personal portfolio landing page** that showcases my fashion design work, skills, experience, and contact information — live on the internet via GitHub Pages.
@@ -23,13 +24,13 @@ Build and deploy a **personal portfolio landing page** that showcases my fashion
 ## 2. Quick Summary of TailwindCSS
 
 ### What is it?
-TailwindCSS is a utility-first CSS framework. Instead of writing CSS in a separate stylesheet, you apply pre-built utility classes directly in your HTML — classes like `text-center`, `bg-black`, `p-4`, and `rounded-xl` that each do one specific thing.
+TailwindCSS is a utility-first CSS framework. Instead of writing CSS in a separate stylesheet, pre-built utility classes are applied directly in HTML — classes like `text-center`, `bg-black`, `p-4`, and `rounded-xl` that each do one specific thing.
 
 ### Where is it used?
 TailwindCSS is used by thousands of companies worldwide — from startups to large tech firms — to build websites, dashboards, landing pages, and web applications. It is one of the most popular CSS frameworks as of 2025.
 
 ### One real-world example
-The customer-facing pages of companies like **Vercel**, **Loom**, and **GitHub's newer UI components** are built using TailwindCSS.
+Companies such as **Vercel**, **Loom**, and **GitHub** use TailwindCSS in their customer-facing pages and UI components.
 
 ---
 
@@ -42,7 +43,7 @@ The customer-facing pages of companies like **Vercel**, **Loom**, and **GitHub's
 | **Browser** | Chrome, Firefox, or Edge |
 | **Internet** | Required (for CDN version) |
 | **Node.js** | Not required for CDN approach |
-| **npm/pip** | Not required for CDN approach |
+| **npm / pip** | Not required for CDN approach |
 
 > **Note:** For this beginner project, we use the **Tailwind CDN** (a script tag in HTML). This means zero installations — just a browser and a text editor.
 
@@ -70,7 +71,7 @@ my-portfolio/
 └── Msoo.jpg   ← (your photo, same folder)
 ```
 
-**Step 3 — Create index.html**
+**Step 3 — Create `index.html`**
 In VS Code, create a new file called `index.html`.
 
 **Step 4 — Add the HTML boilerplate**
@@ -90,18 +91,17 @@ In VS Code, create a new file called `index.html`.
 ```
 
 **Step 5 — Open in browser**
-Right-click `index.html` → Open with → your browser. You should see "Hello, World!" styled with Tailwind.
-
-That's it — Tailwind is working! ✅
+Right-click `index.html` → Open with → your browser.
+You should see **"Hello, World!"** styled with Tailwind. ✅ Tailwind is working!
 
 ---
 
 ## 5. Minimal Working Example
 
 ### What it does:
-A simple styled "Hello World" card that demonstrates core Tailwind utility classes — background color, padding, rounded corners, shadow, and text styling.
+A simple styled card that demonstrates core Tailwind utility classes — background color, padding, rounded corners, shadow, and text styling.
 
-### Code:
+### Code (with inline comments):
 
 ```html
 <!DOCTYPE html>
@@ -109,16 +109,43 @@ A simple styled "Hello World" card that demonstrates core Tailwind utility class
 <head>
   <meta charset="UTF-8" />
   <title>Tailwind Hello World</title>
+  <!-- Step 1: Load Tailwind via CDN — no installation needed -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
+<!-- bg-gray-100: light gray page background -->
+<!-- min-h-screen: fills the full viewport height -->
+<!-- flex items-center justify-center: centers content on the page -->
 <body class="min-h-screen bg-gray-100 flex items-center justify-center">
 
-  <!-- Card component -->
+  <!-- bg-white: white card background -->
+  <!-- rounded-2xl: large rounded corners -->
+  <!-- shadow-lg: drop shadow for depth -->
+  <!-- p-10: padding on all sides -->
+  <!-- max-w-sm: limits card width -->
+  <!-- text-center: centers all text inside -->
   <div class="bg-white rounded-2xl shadow-lg p-10 max-w-sm text-center">
+
+    <!-- text-3xl font-bold: large bold heading -->
+    <!-- text-gray-800: dark gray text color -->
+    <!-- mb-2: small margin below heading -->
     <h1 class="text-3xl font-bold text-gray-800 mb-2">Hello, Tailwind!</h1>
+
+    <!-- text-gray-500: lighter muted text -->
+    <!-- text-sm: smaller font size -->
+    <!-- mb-6: margin below paragraph -->
     <p class="text-gray-500 text-sm mb-6">Your first styled component 🎉</p>
+
+    <!-- bg-black: black button background -->
+    <!-- text-white: white button text -->
+    <!-- uppercase tracking-widest: spaced-out uppercase letters -->
+    <!-- px-6 py-3: horizontal and vertical padding -->
+    <!-- rounded-full: pill shape -->
+    <!-- hover:bg-gray-800: darker on hover -->
+    <!-- transition: smooth animation -->
     <a href="#"
-       class="bg-black text-white text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-gray-800 transition">
+       class="bg-black text-white text-xs uppercase tracking-widest
+              px-6 py-3 rounded-full hover:bg-gray-800 transition">
       Get Started
     </a>
   </div>
@@ -128,75 +155,157 @@ A simple styled "Hello World" card that demonstrates core Tailwind utility class
 ```
 
 ### Expected output:
-A centered white card on a light gray background, with a bold heading, subtitle text, and a black pill-shaped button that darkens on hover.
-
-### Key Tailwind classes used:
-
-| Class | What it does |
-|---|---|
-| `min-h-screen` | Makes body fill the full screen height |
-| `flex items-center justify-center` | Centers content horizontally & vertically |
-| `bg-white` | Sets background to white |
-| `rounded-2xl` | Applies large rounded corners |
-| `shadow-lg` | Adds a large drop shadow |
-| `p-10` | Adds padding on all sides |
-| `text-3xl font-bold` | Large bold text |
-| `hover:bg-gray-800` | Darker background on hover |
-| `transition` | Smooth animation on state change |
+A centered white card on a light gray background, with a bold heading, subtitle text, and a black pill-shaped button that darkens smoothly on hover.
 
 ---
 
 ## 6. AI Prompt Journal
 
-This section documents the AI prompts used throughout the project, how the AI responded, and my reflections on its usefulness.
+> This section documents the full structured prompts used during this project, the AI's responses, and personal reflections on their usefulness.
 
 ---
 
-### Prompt 1
+### Prompt 1 — Understanding the Technology
+
 **Prompt used:**
-> "I am a total beginner in web development. I want to learn TailwindCSS to build a personal portfolio landing page. Can you explain what TailwindCSS is and how to get started without installing anything?"
+
+```
+I am a complete beginner in web development and I want to learn TailwindCSS
+to build a personal portfolio website.
+
+Please help me by:
+1. Explaining what TailwindCSS is in simple terms
+2. Telling me where and why it is used in real projects
+3. Comparing it briefly to regular CSS so I understand the difference
+4. Recommending the easiest way to get started without any installations
+
+Context:
+- My background: Fashion Design — I have no prior coding experience
+- My goal: Build a portfolio landing page to showcase my work
+- Tool I am using: VS Code on Windows
+- Framework/Language: HTML + TailwindCSS (beginner level)
+```
 
 **AI's response summary:**
-The AI explained that TailwindCSS is a utility-first CSS framework and recommended using the CDN approach for beginners — simply adding a `<script>` tag to HTML, with no npm or Node.js required. It gave a clear first example with `bg-white`, `p-4`, and `text-center`.
+The AI explained TailwindCSS as a "design toolkit built into your HTML" — instead of writing a separate CSS file, you apply small, single-purpose classes like `text-center` or `bg-black` directly in your tags. It compared it to regular CSS (where you name classes yourself and write rules) vs Tailwind (where the classes already exist and you just pick them). It recommended the **CDN approach** — adding a single `<script>` tag — as the perfect starting point with zero setup.
 
-**Evaluation:**
-Very helpful. It removed the intimidation of "installing" something and gave me a path to see results immediately. The CDN suggestion was the right call for a beginner.
+**Evaluation of helpfulness:**
+Extremely helpful. The fashion analogy the AI used — "utility classes are like a wardrobe of ready-made pieces you mix and match" — made the concept click immediately. It removed the fear of installations and gave a clear, actionable first step.
 
 ---
 
-### Prompt 2
+### Prompt 2 — Building the Portfolio Page
+
 **Prompt used:**
-> "I am a fashion designer. Build me a full personal portfolio landing page using TailwindCSS via CDN. It should have a hero section with my name and photo, a skills section, a collections/portfolio section, an experience section, and a contact section. Make it look editorial and high-fashion — dark charcoal and cream palette with gold accents."
+
+```
+I want to build a complete personal portfolio landing page using TailwindCSS via CDN.
+
+Please help me by:
+1. Creating a full HTML file with multiple sections: hero, about, skills, portfolio/collections, experience, and contact
+2. Making the design look editorial and high-fashion — not generic
+3. Using a dark charcoal (#1a1a1a) and cream (#f5f0e8) color palette with gold (#b8975a) accents
+4. Adding smooth fade-in animations on the hero section
+5. Including a scrolling marquee banner with fashion-related keywords
+6. Making it fully responsive for mobile screens
+
+Design brief:
+- Aesthetic: Editorial, luxury fashion — think Vogue magazine layout
+- Fonts: Cormorant Garamond (serif, elegant) + Montserrat (clean, modern)
+- Mood: Dark, sophisticated, runway-ready
+- Target user: A fashion designer showcasing their work to clients and employers
+
+Language/Framework: HTML + TailwindCSS CDN + Google Fonts
+```
 
 **AI's response summary:**
-The AI generated a complete, multi-section HTML file with Cormorant Garamond and Montserrat fonts, a split hero layout, scrolling marquee, skills grid, portfolio cards, experience timeline, tools section, contact form, and footer — all styled to match a high-fashion editorial aesthetic.
+The AI generated a complete multi-section portfolio page with a split hero layout (dark left panel, photo right panel), a gold vertical divider, fade-up animations using `@keyframes`, a scrolling marquee with fashion keywords, a skills grid with hover effects, portfolio collection cards, an experience and education section, a tools section, and a contact form — all in a single `index.html` file using the Tailwind CDN.
 
-**Evaluation:**
-Extremely helpful. The output was production-quality and far beyond what I could have built from scratch in a short time. The AI understood the aesthetic brief (editorial, fashion, gold accents) and translated it into code. This demonstrated how AI can accelerate the design-to-code workflow significantly.
+**Evaluation of helpfulness:**
+The output far exceeded expectations. The AI understood the aesthetic brief deeply — the Cormorant Garamond + Montserrat pairing felt genuinely editorial, and the charcoal/cream/gold palette matched the high-fashion vision perfectly. This prompt demonstrated how giving detailed design context produces dramatically better results than a vague request.
 
 ---
 
-### Prompt 3
+### Prompt 3 — Personalising with Real Content
+
 **Prompt used:**
-> "Update the portfolio with my real information: my name is Hellen Muthoni Wanjiru, I studied at Maseno University, I worked at Nemari Living Interiors as Branch Manager and Creative Lead. My email is muthonihellen441@gmail.com, phone is +254 705 762 929, Instagram is @hellenmuthoni. Use my uploaded CV and portfolio PDF to fill in all sections accurately."
+
+```
+I want to update the portfolio page with my real personal information from my CV and portfolio PDF.
+
+Please help me by:
+1. Replacing all placeholder names with my real name: Hellen Muthoni Wanjiru
+2. Updating the hero tagline to reflect my actual background: Textile, Apparel Design and Fashion Merchandising
+3. Filling in the experience section with my real job: Branch Manager & Creative Lead at Nemari Living Interiors, Kilimani, Nairobi (2025)
+4. Adding my real education: BA Textile, Apparel Design and Fashion Merchandising + Interior Design with IT, Maseno University, Second Class Upper Division, 2021–2025
+5. Replacing the skills with my actual competencies from my CV
+6. Updating all contact details: email muthonihellen441@gmail.com, phone +254 705 762 929, Instagram @hellenmuthoni, location Nairobi, Kenya
+7. Using my uploaded photo (Msoo.jpg) in both the hero and about sections
+
+Uploaded files: CV (PDF) + Portfolio (PDF) + Msoo.jpg
+Language/Framework: HTML + TailwindCSS CDN
+```
 
 **AI's response summary:**
-The AI read through the CV and portfolio PDF, extracted all relevant details — education, experience, skills, software tools, portfolio themes — and rebuilt the entire page with real content replacing all placeholder text. It also integrated the uploaded photo (`Msoo.jpg`) into both the hero and about sections.
+The AI read both PDFs and extracted all relevant information — experience bullet points from the CV, portfolio themes and collection names from the portfolio document, and all contact details. It rebuilt the entire page with real content, replaced all placeholder text, and set the `<img src="Msoo.jpg">` tag in both the hero section and the about section with proper `object-fit: cover` and `object-position: center top` styling so the photo displayed correctly.
 
-**Evaluation:**
-This was the most impactful prompt. It showed how AI can process documents and synthesize them into a functional web output. The result was a page that genuinely represents me — not a generic template.
+**Evaluation of helpfulness:**
+This was the most impactful prompt of the entire project. It demonstrated that AI can act as a content extraction and transformation tool — reading documents and producing a fully personalised output. The portfolio went from a beautiful template to a genuine representation of my identity as a designer.
 
 ---
 
-### Prompt 4
+### Prompt 4 — Debugging a Layout Issue
+
 **Prompt used:**
-> "Explain what each Tailwind class in my hero section does, so I can understand and learn from my own code."
+
+```
+My portfolio page has a layout problem on mobile screens.
+
+Please help me by:
+1. Identifying which sections are breaking on small screens
+2. Explaining what is causing the issue
+3. Suggesting the correct Tailwind responsive classes to fix it
+4. Showing me the before and after code for each fix
+
+Current issue: The hero section uses a two-column grid that squishes on mobile.
+The about section grid also overflows on small screens.
+
+Language/Framework: HTML + TailwindCSS CDN
+Screen size affected: Mobile (< 768px width)
+```
 
 **AI's response summary:**
-The AI broke down each utility class line by line — explaining `min-h-screen`, `grid`, `grid-template-columns`, `backdrop-filter`, `object-fit`, `letter-spacing`, and animation classes — in plain English.
+The AI identified that the hero used a fixed `grid-template-columns: 1fr 1fr` CSS property that did not respond to screen size. It explained Tailwind's responsive prefix system (e.g. `md:` applies only at screens 768px and above), then showed how to change the grids to `grid-cols-1 md:grid-cols-2` so they stack on mobile and split on desktop. It also added `@media (max-width: 768px)` overrides in the `<style>` block for custom CSS sections.
 
-**Evaluation:**
-Very educational. Reading AI explanations of code I had already seen in action made the concepts stick much faster than reading documentation alone.
+**Evaluation of helpfulness:**
+Very helpful and educational. The AI's explanation of how Tailwind's responsive prefixes work (`sm:`, `md:`, `lg:`) gave me a reusable mental model I can apply to any future layout. Seeing the before/after code side by side made the fix easy to understand and apply.
+
+---
+
+### Prompt 5 — Learning from the Code
+
+**Prompt used:**
+
+```
+I want to make my TailwindCSS code more readable and help me understand what I built.
+
+Please help me by:
+1. Explaining what each Tailwind class in my hero section does, one by one
+2. Identifying any classes that are doing the same thing so I can simplify
+3. Suggesting more descriptive ways to group related classes using comments
+4. Pointing out any inconsistent spacing or sizing patterns across sections
+
+[Pasted hero section HTML code]
+
+Language/Framework: HTML + TailwindCSS CDN
+My learning goal: Understand every class I am using so I can build the next section myself
+```
+
+**AI's response summary:**
+The AI went line by line through the hero section, explaining each utility class in plain English — e.g. `backdrop-filter blur(8px)` creates a frosted glass effect, `letter-spacing: 0.38em` creates the spaced-out uppercase label look, `object-position: center top` ensures the photo shows the face rather than being cropped at the middle. It also noted that `min-h-screen` and `height: 100vh` were being used inconsistently across sections and recommended standardising to `min-h-screen`.
+
+**Evaluation of helpfulness:**
+Invaluable for learning. This prompt turned the AI-generated code into a personal lesson. Reading explanations of code I had already seen in action made the concepts stick far faster than reading documentation alone. After this session, I felt confident enough to manually edit classes myself without asking the AI first.
 
 ---
 
@@ -204,8 +313,8 @@ Very educational. Reading AI explanations of code I had already seen in action m
 
 ### Issue 1 — Photo not showing
 **Problem:** The `<img>` tag showed a broken image icon.
-**Cause:** The image file (`Msoo.jpg`) was not in the same folder as `index.html`.
-**Fix:** Move both files into the same folder. The `src` attribute must match the filename exactly, including capitalisation.
+**Cause:** `Msoo.jpg` was not in the same folder as `index.html`.
+**Fix:** Keep both files in the same folder. The `src` attribute must match the filename exactly, including capitalisation.
 ```html
 <!-- Correct -->
 <img src="Msoo.jpg" alt="Hellen Muthoni" />
@@ -215,8 +324,8 @@ Very educational. Reading AI explanations of code I had already seen in action m
 
 ### Issue 2 — Tailwind classes not working
 **Problem:** Classes like `bg-black` or `text-center` had no effect.
-**Cause:** The Tailwind CDN `<script>` tag was missing or placed after the `<body>` tag.
-**Fix:** Place the script in the `<head>` section:
+**Cause:** The Tailwind CDN `<script>` tag was missing or placed after the `<body>` content.
+**Fix:** Place the script inside `<head>`:
 ```html
 <head>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -226,16 +335,16 @@ Very educational. Reading AI explanations of code I had already seen in action m
 ---
 
 ### Issue 3 — Google Fonts not loading
-**Problem:** Custom fonts (Cormorant Garamond, Montserrat) were not rendering.
-**Cause:** No internet connection, or the `<link>` tag was placed after the `<script>` tag.
-**Fix:** Place the Google Fonts `<link>` before the Tailwind script, and ensure you have internet access when opening the file.
+**Problem:** Cormorant Garamond and Montserrat were not rendering.
+**Cause:** No internet connection, or the `<link>` tag was placed incorrectly.
+**Fix:** Place the Google Fonts `<link>` before the Tailwind script inside `<head>`, and ensure internet access.
 
 ---
 
 ### Issue 4 — Page layout broken on mobile
-**Problem:** The two-column hero looked squished on a phone screen.
+**Problem:** Two-column hero looked squished on a phone screen.
 **Cause:** Fixed grid layout without responsive breakpoints.
-**Fix:** Add a media query or use Tailwind's responsive prefixes like `md:grid-cols-2`:
+**Fix:** Use Tailwind responsive prefixes:
 ```html
 <div class="grid grid-cols-1 md:grid-cols-2">
 ```
@@ -244,28 +353,27 @@ Very educational. Reading AI explanations of code I had already seen in action m
 
 ### Issue 5 — GitHub Pages showing blank page
 **Problem:** Site deployed but showed a blank white page.
-**Cause:** The file was not named `index.html` (e.g. it was named `portfolio.html`).
-**Fix:** Rename the main file to `index.html` — GitHub Pages looks for this file by default.
+**Cause:** Main file was not named `index.html`.
+**Fix:** Rename the main file to exactly `index.html` — GitHub Pages requires this.
 
 ---
 
 ## 8. References
 
 ### Official Documentation
-- [TailwindCSS Official Docs](https://tailwindcss.com/docs) — Complete reference for all utility classes
-- [TailwindCSS CDN Setup](https://tailwindcss.com/docs/installation/play-cdn) — How to use Tailwind without npm
+- [TailwindCSS Official Docs](https://tailwindcss.com/docs)
+- [TailwindCSS CDN Setup](https://tailwindcss.com/docs/installation/play-cdn)
+- [GitHub Pages Docs](https://docs.github.com/en/pages)
 
 ### Fonts
 - [Google Fonts — Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond)
 - [Google Fonts — Montserrat](https://fonts.google.com/specimen/Montserrat)
 
-### Hosting
-- [GitHub Pages Docs](https://docs.github.com/en/pages) — How to deploy a static site for free
-
 ### Learning Resources
-- [Tailwind CSS Crash Course — Traversy Media (YouTube)](https://www.youtube.com/watch?v=dFgzHOX84xQ)
+- [TailwindCSS Crash Course — Traversy Media (YouTube)](https://www.youtube.com/watch?v=dFgzHOX84xQ)
 - [TailwindCSS Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
-- [W3Schools HTML Basics](https://www.w3schools.com/html/) — HTML fundamentals reference
+- [W3Schools HTML Basics](https://www.w3schools.com/html/)
+- [Responsive Design with Tailwind — StackOverflow](https://stackoverflow.com/questions/tagged/tailwind-css)
 
 ### AI Tool Used
 - [Claude by Anthropic](https://claude.ai) — Used for learning, code generation, debugging, and documentation throughout this project.
@@ -274,13 +382,13 @@ Very educational. Reading AI explanations of code I had already seen in action m
 
 ## Reflection
 
-This capstone project taught me that **AI is not a replacement for learning — it is an accelerator.** By prompting Claude with specific, context-rich requests, I was able to go from zero web development experience to a fully deployed, professional-looking portfolio website in under a week.
+This capstone project taught me that **AI is not a replacement for learning — it is an accelerator.** The quality of the AI's output was directly proportional to the quality of the prompt. Vague prompts gave generic results. Detailed, structured prompts with context, numbered instructions, and specific goals gave production-quality outputs.
 
-The most valuable lesson was learning to **read and understand the code the AI produced**, not just copy-paste it. Breaking down each Tailwind class, experimenting with colours and layouts, and debugging errors myself gave me genuine technical confidence.
+The five prompts in this journal represent a real learning journey — from understanding the basics, to building, personalising, debugging, and finally comprehending the code at a deep level. Each prompt built on the last.
 
-As a fashion designer, I now see web design as another medium for creative expression — and TailwindCSS as a tool I will continue to use.
+As a fashion designer, I now see web design as another medium for creative expression — and structured AI prompting as a professional skill as valuable as any design tool.
 
 ---
 
 *Submitted for Moringa School AI Capstone · 2025*
-*Hellen Muthoni Wanjiru · muthonihellen441@gmail.com*
+*Hellen Muthoni Wanjiru · muthonihellen441@gmail.com · +254 705 762 929*
